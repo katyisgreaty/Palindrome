@@ -12,5 +12,17 @@ namespace Palindrome.Objects
     {
       _wordInput = wordInput;
     }
+
+    public string PalindromeMethod()
+    {
+      if (_wordInput[0] == _wordInput[(_wordInput.Length-1)])
+      {
+        return "true";
+      }
+      else
+      {
+        return "this word is not a palindrome";
+      }
+    }
   }
 }
