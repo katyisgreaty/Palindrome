@@ -15,14 +15,21 @@ namespace Palindrome.Objects
 
     public string PalindromeMethod()
     {
-      if (_wordInput[0] == _wordInput[(_wordInput.Length-1)])
+      int counter = 0;
+      int half = _wordInput.Length/2;
+      string result = "this word is not a palindrome";
+      for (int i = 0; i <= half; i++)
       {
-        return "true";
+        if (_wordInput[i] == _wordInput[(_wordInput.Length-(i+1))])
+        {
+          counter++;
+        }
       }
-      else
+      if(counter >= half)
       {
-        return "this word is not a palindrome";
+        result = "true";
       }
+      return result;
     }
   }
 }
