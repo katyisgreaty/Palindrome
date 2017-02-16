@@ -1,0 +1,20 @@
+@{
+    Layout="Shared/_Layout.cshtml";
+}
+  <div class="space">
+
+    @if(@Model != null) {
+      <h1>Your Results:</h1>
+      <div class="row">
+        <h2>@Model</h2>
+      </div>
+    }
+  </div>
+
+<form action="/" method="post">
+  <div class="form-group">
+    <label for="initial-word">Enter a word or a phrase:</label>
+    <input type="text" name="initial-word" id="initial-word" required>
+  </div>
+  <button type="submit" class="btn btn-lg btn-primary">Check if it's a palindrome!</button>
+</form>

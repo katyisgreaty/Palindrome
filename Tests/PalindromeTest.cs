@@ -27,7 +27,7 @@ namespace Palindrome.Objects
     [Fact]
     public void Palindrome_ReturnTrueIfPalindrome_true()
     {
-      Palindrome testPalindrome = new Palindrome("treweexdrdxeewert");
+      Palindrome testPalindrome = new Palindrome("Hello olleH");
       string expected = "true";
       string output = testPalindrome.PalindromeMethod();
       Assert.Equal(expected, output);
