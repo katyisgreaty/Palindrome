@@ -15,7 +15,7 @@ namespace PalindromeChecker.Objects
     //   Assert.Equal(expected, output);
     // }
 
-    // [Fact]
+    // [Fact
     // public void Palindrome_ReturnTrueIfFirstLastSame_firstlast()
     // {
     //   Palindrome testPalindrome = new Palindrome("tendt");
