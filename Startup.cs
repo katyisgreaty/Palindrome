@@ -5,7 +5,7 @@ using Nancy;
 using Nancy.Owin;
 using Nancy.ViewEngines.Razor;
 
-namespace Palindrome
+namespace PalindromeChecker
 {
   public class Startup
   {

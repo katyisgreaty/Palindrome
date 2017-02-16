@@ -1,9 +1,9 @@
 using Nancy;
-using RPSGame.Objects;
+using PalindromeChecker.Objects;
 using System;
 using System.Collections.Generic;
 
-namespace Palindrome
+namespace PalindromeChecker
 {
   public class HomeModule : NancyModule
   {
@@ -12,7 +12,12 @@ namespace Palindrome
       Get["/"] = _ => {
         return View["index.cshtml"];
       };
-      
+      Post["/"] = _ => {
+        string userInput = Request.Form["initial-word"];
+        Palindrome newPalindrome = new Palindrome(userInput);
+        string userOutput = newPalindrome.PalindromeMethod();
+        return View["index.cshtml", userOutput];
+      };
     }
   }
 }

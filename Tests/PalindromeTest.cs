@@ -2,7 +2,7 @@ using Xunit;
 using System;
 using System.Collections.Generic;
 
-namespace Palindrome.Objects
+namespace PalindromeChecker.Objects
 {
   public class PalindromeTest
   {

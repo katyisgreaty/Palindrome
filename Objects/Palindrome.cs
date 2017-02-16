@@ -2,7 +2,7 @@ using Nancy;
 using System;
 using System.Collections.Generic;
 
-namespace Palindrome.Objects
+namespace PalindromeChecker.Objects
 {
   public class Palindrome
   {
