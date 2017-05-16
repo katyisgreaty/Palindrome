@@ -36,3 +36,9 @@ Specs
 3. Program will return true if it is a Palindrome
   -ex input: hannah
   -ex output: true
+
+### License
+
+*Under MIT License*
+
+Copyright (c) 2017 **_Katy Daviscourt and Kaz Matthews_**
